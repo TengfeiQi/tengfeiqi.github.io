@@ -797,7 +797,7 @@ pre .deletion {
 }
 
 .border {
-  background: url("../images/dots.png") repeat;
+  background: url("./img/dots.png") repeat;
   height: 5px;
   margin: 30px 0px !important;
 }
