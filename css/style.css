@@ -10,7 +10,8 @@
   padding: 0;
 }
 body {
-  background: #eee;
+  /*background: #eee;*/
+  background: url(http://ticket.ustack.com/assets/default/images/bedge_grunge.png) 0 0 fixed;
   color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
