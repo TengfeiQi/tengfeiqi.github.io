@@ -298,8 +298,7 @@ article .entry blockquote {
   font-style: italic;
   font-family: "Georgia", serif;
   font-size: 1.2em;
-  padding: 0 30px 15px;
-  text-align: center;
+  padding: 0 20px 15px;
 }
 article .entry blockquote footer {
   border-top: none;
