@@ -798,5 +798,5 @@ pre .deletion {
 .border {
   background: url(http://js8.in/img/dots.png) repeat;
   height: 5px;
-  margin: 30px 0px !important;
+  margin: 40px 0 10px 0 !important;
 }
