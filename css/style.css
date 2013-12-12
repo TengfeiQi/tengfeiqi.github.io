@@ -27,6 +27,9 @@ body {
     font-size: 13px;
   }
 }
+h1 a {
+  font-family: Satisfy, cursive;
+}
 h1,
 h2,
 h3,
