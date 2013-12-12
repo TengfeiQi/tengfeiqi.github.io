@@ -206,14 +206,14 @@
 };
 </pre></td></tr></table></figure>
 
-<h2>Instance Methods</h2>
+<h2>默认的实例方法</h2>
 <ul>
-<li>save</li>
-<li>destroy</li>
-<li>toObject</li>
-<li>toJSON</li>
+<li><code>save()</code></li>
+<li><code>destroy()</code></li>
+<li><code>toObject()</code></li>
+<li><code>toJSON()</code></li>
 </ul>
-<h2>Custom Defined Instance Methods</h2>
+<h2>用户自定义实例方法</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -250,23 +250,26 @@ User.findOne(<span class="number">1</span>).done(<span class="reserved">function
 });
 </pre></td></tr></table></figure>
 
-<h2>Lifecycle Callbacks</h2>
-<p>Lifecycle callbacks are functions you can define to run at certain times in a query. They are hooks that you can tap into in order to change data. An example use case would be automatically encrypting a password before creating or automatically generating a slugified url attribute.</p>
-<h3>Callbacks run on Create:</h3>
+<h2>自回调函数</h2>
+<p>按照官方的解释自回调方法是在特定时间执行的函数，可以在model实例方法之前或者之后调用处理数据，最常用的应用场景是密码在写入数据库之前加密。</p>
+<h3><code>Create()</code>的回调函数:</h3>
 <ul>
 <li>beforeValidation / <em>fn(values, cb)</em></li>
 <li>beforeCreate / <em>fn(values, cb)</em></li>
-<li>afterCreate / <em>fn(newlyInsertedRecord, cb)</em><h3>Callbacks run on Update:</h3>
-</li>
+<li>afterCreate / <em>fn(newlyInsertedRecord, cb)</em></li>
+</ul>
+<h3><code>Update()</code>的回调函数 :</h3>
+<ul>
 <li>beforeValidation / <em>fn(valuesToUpdate, cb)</em></li>
 <li>beforeUpdate / <em>fn(valuesToUpdate, cb)</em></li>
-<li>afterUpdate / <em>fn(updatedRecord, cb)</em><h3>Callbacks run on Destroy:</h3>
-</li>
+<li>afterUpdate / <em>fn(updatedRecord, cb)</em></li>
+</ul>
+<h3><code>Destroy</code>的回调函数:</h3>
+<ul>
 <li>beforeDestroy / <em>fn(criteria, cb)</em></li>
 <li>afterDestroy / <em>fn(cb)</em></li>
 </ul>
-<p>数据的定义比以前的版本有略微的变化，在语法上，将done() 改为了exec()了</p>
-<h2>Callback Method</h2>
+<h2>回调函数</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -275,7 +278,7 @@ User.findOne(<span class="number">1</span>).done(<span class="reserved">function
 }</span>);
 </pre></td></tr></table></figure>
 
-<h2>Deferred Object Method</h2>
+<h2>链式方法</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
